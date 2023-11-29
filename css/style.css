@@ -1,0 +1,376 @@
+
+/* 
+fardene
+<!-- Gull-gul kode: #e6bd43
+
+Gråsvart: #252525
+
+Svart: #000
+
+Hvit: #fff */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:wght@400;700&family=Quicksand:wght@300;400;700&display=swap');
+
+body { 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#grid{
+    display: grid;
+    
+    grid-template-areas: "header" "toppen" "ekstra" "services" "company" "Contact" "footer";
+    
+}
+"main"
+header, main, footer {
+    padding: 2rem;
+
+}
+
+header{
+    display: flex;
+    grid-area: header;
+    flex-direction: column;
+    color: #000;
+    padding: 1rem;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+nav a{ 
+    display: flex;
+    flex-direction: column; 
+    padding: 1rem;
+    margin:  0 1rem 0 1rem;
+}
+
+header nav ul{
+    list-style: none;
+    text-align: center;
+} 
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.gult{
+    background-color: #e6bd43;
+    color: #000;
+    margin: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+    font-size: 80%;
+    
+}
+
+
+main{
+    grid-area: main;
+    display: flex;
+    display: contents;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+#toppen{
+    display: flex;
+    grid-area: toppen;
+    background-color: #aba2a2;
+    background-image: url("../img/bakgrund.png"); 
+    background-size: cover;
+    background-blend-mode : soft-light;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 180%;
+} 
+
+
+/*inddex-siden*/
+.ekstra{
+    grid-area: ekstra;
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+}
+#company{
+    display: flex;
+    grid-area: company;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-style: solid;
+    text-align: left;
+}
+#company article{
+    gap: 1rem;
+
+}
+.boks{
+    color: #000;
+    border-style: solid;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 80%;
+}
+
+/*about-siden*/
+
+#topp{
+    display: flex;
+    grid-area: toppen;
+    background-color: #aba2a2;
+    background-image: url("../img/bakgrund.png"); 
+    background-size: cover;
+    padding: 2rem;
+    justify-content: left;
+}
+
+#about{
+    display: none;
+}
+#vindu{
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: left;
+    background-color: #ffffffa9;
+}
+
+
+
+#services{
+grid-area: services;
+
+}
+#services section{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+#clients{
+    background-color: #e6bd43;
+}
+#clients article{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.rundt{
+    width: 10%;
+}
+
+#kontakt{
+    background-color: #eeecec;
+    padding: 3rem;
+    grid-area: Contact;
+}
+#kontakt section{ 
+    display: flex; 
+    
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.skjema{
+    padding: 1rem;
+}
+.skjema form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem; 
+    text-align: left;
+}
+form input{
+    padding: 1rem;
+    border: none;
+} 
+#Massage{
+    padding: 1rem 1em 4rem;
+    margin: 0 0 1rem 0;
+}
+
+#info{
+    text-align: left;
+    padding: 1rem;
+}
+#info nav{
+    list-style: none
+}
+#ikon{
+    font-size: 120%;
+}
+
+#kart{
+    margin: 0 1rem 0 1rem;
+
+}
+
+/*slutt med about og under er det Products*/
+
+
+
+.under{
+    grid-area: main; 
+    text-align: center;
+    font-size: 170%;
+    border-bottom-style: solid;
+    border-bottom-color: #e6bd43;
+        
+}
+
+#kliks{
+    display: flex;
+    list-style: none;
+    color: #000;
+}
+
+#kliks ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+.visning{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*felle igen*/
+
+img{
+    max-width: 80%;
+}
+
+footer{
+    display: flex;
+    grid-area: footer;
+    background-color: #252525;
+    color: #fff; 
+    padding: 1rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer nav ul{
+    list-style: none;
+    color: #fff;
+
+}
+#socialmader{
+    display: flex;
+    color: #fff;
+    margin: 1rem;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 150%;
+}
+
+
+@media only screen and (min-width: 692px) {
+#grid{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header" "main main" "toppen toppen" "vindu" "company company" "Contact Contact" "services services" "Contact Contact " "footer footer";
+    
+}
+
+
+header{
+    display: flex;
+    grid-area: header;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.logo{
+    display: flex;
+    justify-content: right;
+
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+header nav ul{
+    display: flex;
+    flex-direction: row; 
+}
+
+
+#toppen{
+    display: flex;
+    grid-area: toppen;
+    justify-content: right;
+
+
+
+
+
+}
+
+#vindu{
+    display: grid;
+    grid-area: vindu;
+}
+#company{
+    display: flex;
+    flex-direction: row;
+}
+
+#services{
+    grid-area: services;
+}
+
+#services section{
+    display: flex;
+    flex-direction: row;
+}
+
+#kontakt section{ 
+    display: flex; 
+    flex-direction: row;
+   
+}
+
+footer{
+    display: flex;
+    grid-area: footer;
+    flex-direction: row;
+    justify-content: space-around;       
+    
+}
+
+}
+
+
